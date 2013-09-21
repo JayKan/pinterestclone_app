@@ -1,4 +1,7 @@
 PinterestcloneApp::Application.routes.draw do
+  root :to      => 'Pages#home'
+  match '/about' => 'Pages#about'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
