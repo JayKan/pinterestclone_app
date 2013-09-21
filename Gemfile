@@ -1,7 +1,11 @@
 source 'https://rubygems.org'
 
+ruby '1.9.3'
 gem 'rails', '3.2.14'
 gem 'jquery-rails'
+gem 'rails_12factor'
+gem 'devise'
+gem 'simple_form'
 
 group :production do
 	gem 'pg'

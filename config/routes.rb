@@ -1,4 +1,6 @@
 PinterestcloneApp::Application.routes.draw do
+  devise_for :users
+
   root :to      => 'Pages#home'
   match '/about' => 'Pages#about'
 
