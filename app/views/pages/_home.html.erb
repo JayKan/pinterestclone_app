@@ -1,20 +1,22 @@
-<% unless user_signed_in? %>
-	<div class="hero-unit">
-		<h1>Welcome to Pinterest Clone</h1>
+<section class="home-hero">
+	<div class="container">
+		<% unless user_signed_in? %>
+				<div class="hero-unit">
+					<h1>Welcome to Pinterest Clone</h1>
 
-		<p>
-			You've found the home page for the 
-			<%= link_to "One Month Rails", "http://onemonthrails.com" %> 
-			tutorial application. This is the Pinterest Clone Application using Ruby on Rails.
-		</p>
+					<p>
+						You've found the home page for the 
+						<%= link_to "One Month Rails", "http://onemonthrails.com" %> 
+						tutorial application. This is the Pinterest Clone Application using Ruby on Rails.
+					</p>
 
-		<p>
-			<%= link_to "Sign Up Now!", new_user_registration_path, class: "btn btn-primary btn-large" %>
-		</p>
+					<p>
+						<%= link_to "Sign Up Now!", new_user_registration_path, class: "btn btn-primary btn-large" %>
+					</p>
+				</div>
+		<% end %>
 	</div>
-<% end %>
-
-
+</section>
 
 
 
