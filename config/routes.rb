@@ -1,10 +1,9 @@
 PinterestcloneApp::Application.routes.draw do
   resources :pins
 
-
   devise_for :users
 
-  root :to      => 'Pages#home'
+  root :to      => 'pins#index'
   match '/about' => 'Pages#about'
 
   # The priority is based upon order of creation:
