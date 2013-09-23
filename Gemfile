@@ -6,6 +6,7 @@ gem 'jquery-rails'
 gem 'rails_12factor'
 gem 'devise'
 gem 'simple_form'
+gem "paperclip", "~> 3.0"
 
 group :production do
 	gem 'pg'
